@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎯 Interactive FunHub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  <h1>🎯 Welcome to the Interactive FunHub!</h1>
+  <p>Let's play with buttons, tabs, images, and forms like a JavaScript wizard 🧙‍♂️</p>
+
+  <!-- 🔘 Button Section -->
+  <section>
+    <button id="changeTextBtn">Click Me!</button>
+    <button id="secretBtn">Double Click Me 🤫</button>
+  </section>
+
+  <!-- 🖼️ Image Gallery -->
+  <section class="gallery">
+    <h2>🐾 Cutie Gallery</h2>
+    <img id="galleryImg" src="images/Cute panda.jpeg" alt="Gallery Image" />
+    <div>
+      <button id="prevBtn">⬅️ Previous</button>
+      <button id="nextBtn">Next ➡️</button>
+    </div>
+  </section>
+
+  <!-- 🗂️ Tab Section -->
+  <section class="tabs">
+    <h2>✨ Tabs of Joy</h2>
+    <div class="tab-buttons">
+      <button class="tab-btn" data-tab="1">Fun Fact</button>
+      <button class="tab-btn" data-tab="2">Joke</button>
+      <button class="tab-btn" data-tab="3">Pro Tip</button>
+    </div>
+    <div class="tab-content" id="tab1">🐝 Honey never spoils – edible even after 3,000 years!</div>
+    <div class="tab-content" id="tab2">💻 Why did the developer go broke? Because he used up all his cache! 😂</div>
+    <div class="tab-content" id="tab3">🧠 Tip: Comment your code like a pro – your future self will thank you!</div>
+  </section>
+
+  <!-- 📝 Form Section -->
+  <section class="form-section">
+    <h2>🧾 Sign Up for Cool Stuff</h2>
+    <form id="signupForm">
+      <label>
+        Name:<br>
+        <input type="text" id="name" required />
+      </label><br>
+      <label>
+        Email:<br>
+        <input type="email" id="email" required />
+        <small id="emailFeedback"></small>
+      </label><br>
+      <label>
+        Password:<br>
+        <input type="password" id="password" required />
+        <small id="passwordFeedback"></small>
+      </label><br>
+      <button type="submit">🚀 Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
